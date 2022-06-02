@@ -2,9 +2,9 @@ package com.alant7_.TEMPLATE.main;
 
 import com.alant7_.TEMPLATE.data.DataLoader;
 import com.alant7_.TEMPLATE.data.DataSource;
-import com.alant7_.util.AlanJavaPlugin;
+import com.alant7_.util.BukkitPlugin;
 
-public class Main extends AlanJavaPlugin {
+public class Main extends BukkitPlugin {
 
     @Override
     public void onPluginEnable() {
