@@ -21,6 +21,13 @@
         </dependency>
 
         <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>23.0.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
             <version>1.18.2-R0.1-SNAPSHOT</version>
@@ -29,7 +36,7 @@
     </dependencies>
 
     <build>
-        <directory>C:\Users\Windows7\Desktop\Alan\Fiverr\server\plugins\${project.artifactId}</directory>
+        <directory>D:\Workspace\java\.out\${project.artifactId}</directory>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

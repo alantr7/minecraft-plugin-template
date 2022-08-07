@@ -6,8 +6,12 @@ import com.alant7_.util.BukkitPlugin;
 
 public class Main extends BukkitPlugin {
 
+    private static Main instance;
+
     @Override
     public void onPluginEnable() {
+
+        instance = this;
 
         setDataSource(new DataSource());
 
@@ -19,7 +23,11 @@ public class Main extends BukkitPlugin {
 
     @Override
     public void onPluginDisable() {
+        
+    }
 
+    public static Main getPlugin() {
+        return instance;
     }
 
     @Override
