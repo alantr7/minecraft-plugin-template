@@ -3,6 +3,8 @@ package com.alant7_.TEMPLATE.main;
 import com.alant7_.TEMPLATE.data.DataLoader;
 import com.alant7_.TEMPLATE.data.DataSource;
 import com.alant7_.util.BukkitPlugin;
+import com.alant7_.util.chat.lang.Language;
+import org.bukkit.configuration.file.FileConfiguration;
 
 public class Main extends BukkitPlugin {
 
@@ -38,6 +40,14 @@ public class Main extends BukkitPlugin {
     @Override
     public DataSource getDataSource() {
         return (DataSource) super.getDataSource();
+    }
+
+    public static Main plugin() {
+        return instance;
+    }
+
+    public static FileConfiguration conf() {
+        return instance.getConfig();
     }
 
 }
